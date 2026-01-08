@@ -33,7 +33,7 @@ jobs:
           path: target/surefire-reports/*.xml # Ruta para guardar los informes
           reporter: java-junit
           fail-on-error: true # Si hay error marcar como tarea fallida.
-  publish:
+publish:
     needs: test # Indica que necesita que la tarea test se ejecute con éxito
     runs-on: ubuntu-latest
     permissions:
