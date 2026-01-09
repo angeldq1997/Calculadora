@@ -8,7 +8,7 @@ on:
 
 # Tareas
 jobs:
-  test: # Tarea "build"
+  - test: # Tarea "build"
     permissions: write-all # Tiene permiso para escribir
     runs-on: ubuntu-latest # Sistema operativo en el que se ejecuta el action
 
@@ -32,9 +32,8 @@ jobs:
           name: Informe de tests
           path: target/surefire-reports/*.xml # Ruta para guardar los informes
           reporter: java-junit
-          fail-on-error: true # Si hay error marcar como tarea fallida.
-          
-  publish:
+          fail-on-error: true # Si hay error marcar como tarea fallida.          
+  - publish:
     needs: test # Indica que necesita que la tarea test se ejecute con éxito
     runs-on: ubuntu-latest
     permissions:
