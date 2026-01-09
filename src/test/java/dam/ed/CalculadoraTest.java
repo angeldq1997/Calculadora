@@ -105,7 +105,7 @@ class CalculadoraTest {
     }
 
     @Test
-    @DisplayName("Pruebas Raíz cuadrada positivos y negativos")
+    @DisplayName("Pruebas Raíz cuadrada positivos y negativos.")
     void testRaizCuadrada() throws Exception{
         assertEquals(1, miCalculadora.raizCuadrada(1));
         assertEquals(0, miCalculadora.raizCuadrada(0));
