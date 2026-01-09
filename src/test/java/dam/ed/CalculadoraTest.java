@@ -98,7 +98,7 @@ class CalculadoraTest {
     @Test
     @DisplayName("Multiplicaciones positivos y negativos")
     void testMultiplicaPositivosYNegativos() throws Exception {
-        assertTrue(miCalculadora.multiplica(-4,2) > 0);
+        assertTrue(miCalculadora.multiplica(4,2) > 0);
         assertTrue(miCalculadora.multiplica(4,-2)< 0);
         assertTrue(miCalculadora.multiplica(-4,2) < 0);
         assertTrue(miCalculadora.multiplica(-4,-2) > 0);
