@@ -4,7 +4,7 @@ name: Tests automáticos
 # En qué eventos y ramas se activa
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 # Tareas
 jobs:
